@@ -132,13 +132,14 @@ function getSubdistrictName($subdistrictId, $subdistricts) {
                 echo "<td>" . htmlspecialchars($districtName2) . "</td>";
                 echo "<td>" . htmlspecialchars($subdistrictName2) . "</td>";
                 echo "<td>" . htmlspecialchars($post['receiver_postcode']) . "</td>";
-                echo "</tr>";
                 echo "<td>";
                 echo "<a href='delete.php?id=" . htmlspecialchars($post['id']) . "'>ลบ</a>";
                 echo "</td>";
                 echo "<td>";
                 echo "<a href='update.php?update_id=" . htmlspecialchars($post['id']) . "'>แก้ไข</a>";
                 echo "</td>";
+                echo "</tr>";
+
             }
         } else {
             echo "<tr><td colspan='16'>No data found</td></tr>";
